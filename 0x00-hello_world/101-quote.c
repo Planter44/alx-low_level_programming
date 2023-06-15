@@ -2,10 +2,9 @@
 #include <unistd.h>
 
 /*
+ * main - Entry point
  *
- * main = the entry point
- *
- *returns to 1
+ *Return: 0 Always (Success)
  */
 int main(void)
 {

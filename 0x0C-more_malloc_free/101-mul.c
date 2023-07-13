@@ -5,10 +5,10 @@
 #define ERR_MSG "Error"
 
 /**
- * is_digit -Checks if string contains non-digit char.
- * @s: the string to be evaluated,
+ * is_digit - checks if a string contains a non-digit char
+ * @s: string to be evaluated
  *
- * Return: 0 if non-digit, otherwise 1.
+ * Return: 0 if a non-digit is found, 1 otherwise
  */
 int is_digit(char *s)
 {
@@ -24,10 +24,10 @@ int is_digit(char *s)
 }
 
 /**
- * _strlen -Returns length of string.
- * @s: the string to evaluate,
+ * _strlen - returns the length of a string
+ * @s: string to evaluate
  *
- * Return: length of string.
+ * Return: the length of the string
  */
 int _strlen(char *s)
 {
@@ -40,7 +40,9 @@ int _strlen(char *s)
 	return (i);
 }
 
-// errors -Handles the errors for main
+/**
+ * errors - handles errors for main
+ */
 void errors(void)
 {
 	printf("Error\n");
@@ -48,10 +50,11 @@ void errors(void)
 }
 
 /**
- * main -Multiplies 2 positive numbers.
- * @argc: the number of arguments,
- * @argv: the array of arguments,
- * Return: always 0
+ * main - multiplies two positive numbers
+ * @argc: number of arguments
+ * @argv: array of arguments
+ *
+ * Return: always 0 (Success)
  */
 int main(int argc, char *argv[])
 {

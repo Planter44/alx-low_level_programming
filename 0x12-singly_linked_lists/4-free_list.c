@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * free_list -The frees a linked list.
+ * free_list -This frees a linked list.
  * @head: list_t list to be freed.
  */
 void free_list(list_t *head)

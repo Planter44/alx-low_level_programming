@@ -3,6 +3,7 @@
 /**
  * delete_nodeint_at_index -Deleteing node in linked list.
  * @head:Pointer to 1st element in list,
+ * @index:Index of node to delete.
  * Return: 1 , or -1 incase of fail.
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)

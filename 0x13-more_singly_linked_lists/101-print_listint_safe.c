@@ -49,6 +49,11 @@ size_t looped_listint_len(const listint_t *head)
 	return (0);
 }
 
+/**
+ * print_listint_safe -prints listint_t list.
+ * @head: Pointer to head of list
+ * Return:No. of nodes in list
+ */
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t nodes, index = 0;

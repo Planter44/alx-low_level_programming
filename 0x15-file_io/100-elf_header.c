@@ -173,16 +173,6 @@ void print_osabi(unsigned char *e_ident)
 }
 
 /**
- * print_abi -prints ABI of ELF header
- * @e_ident:pointer to array with ELF ABI version
- */
-void print_abi(unsigned char *e_ident)
-{
-	printf(" ABI Version: %d\n",
-		e_ident[EI_ABIVERSION]);
-}
-
-/**
  * print_type -prints type of ELF header
  * @e_type:ELF type.
  * @e_ident:pointer to array with ELF class
@@ -237,20 +227,6 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 
 	else
 		printf("%#lx\n", e_entry);
-}
-
-/**
- * close_elf -closing ELF file
- * @elf:file description of ELF file
- */
-void close_elf(int elf)
-{
-	if (close(elf) == -1)
-	{
-		dprintf(STDERR_FILENO,
-			"Error: Can't close fd %d\n", elf);
-		exit(98);
-	}
 }
 
 /**

@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
-  * delete_dnodeint_at_index - Deletes the node at idx of a double linked list
-  * @head: header of double linked list
-  * @index: index of the node, starting from 0
-  * Return: 1 if it succeeded, -1 if it failed
+  * delete_dnodeint_at_index -deletes node of a double linked list.
+  * @head: header of list.
+  * @index: index of the node.
+  * Return: 1 if it success, Otherwise -1.
   */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {

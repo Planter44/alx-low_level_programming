@@ -1,9 +1,9 @@
-#include "lists.h"
+#include "lists."
 
 /**
   * sum_dlistint - sum of all the data (n) of a dlistint_t linked list
-  * @head: header of list
-  * Return: sumation of nodes
+  * @head: header of list.
+  * Return: summation of nodes.
   */
 int sum_dlistint(dlistint_t *head)
 {

@@ -1,0 +1,14 @@
+#include "main.h"
+
+/**
+* _isdigit -Checks if c is a digit.
+* @c: A character.
+* Return: 0 when uppercase, otherwise 1.
+**/
+int _isdigit(int c)
+{
+if (c >= '0' && c <= '9')
+return (1);
+else
+return (0);
+}

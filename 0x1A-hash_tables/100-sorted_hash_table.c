@@ -126,7 +126,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		}
 		tmp = tmp->next;
 	}
-	shn = shash_add(key, value);
+	shn = make_shash_node(key, value);
 	if (shn == NULL)
 		return (0);
 	shn->next = ht->array[index];
@@ -211,12 +211,12 @@ void shash_table_print_rev(const shash_table_t *ht)
 }
 
 /**
- * shash_add -Adds node for the sorted hash.
+ * make_shash_node -Adds node for the sorted hash.
  * @key: Key.
  * @value: value for storing.
  * Return: To new node, otherwise NULL.
  */
-shash_node_t *shash_add(const char *key, const char *value)
+shash_node_t *make_shash_node(const char *key, const char *value)
 {
 	shash_node_t *shn;
 
